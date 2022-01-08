@@ -18,7 +18,7 @@ class IList
 
 	virtual int size() = 0;
 
-	virtual T* get(int index) = 0;
+	virtual T get_data_by_index(int index) = 0;
 
 };
 

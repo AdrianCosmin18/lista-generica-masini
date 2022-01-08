@@ -1,3 +1,6 @@
-﻿  ListaGenericaMedit.cpp
+﻿  ControlMasina.cpp
+  ListaGenericaMedit.cpp
+  Generating Code...
+C:\Users\Cosmin\C++Meditatii\OOP\StructuriDeDate\ExempleStructuriDeDate\ListaGenericaMedit\ListaGenericaMedit\Lista.h(96): warning C4715: 'Lista<Persoana *>::indexOf': not all control paths return a value
 C:\Users\Cosmin\C++Meditatii\OOP\StructuriDeDate\ExempleStructuriDeDate\ListaGenericaMedit\ListaGenericaMedit\Lista.h(96): warning C4715: 'Lista<Masina *>::indexOf': not all control paths return a value
   ListaGenericaMedit.vcxproj -> C:\Users\Cosmin\C++Meditatii\OOP\StructuriDeDate\ExempleStructuriDeDate\ListaGenericaMedit\ListaGenericaMedit\Debug\ListaGenericaMedit.exe

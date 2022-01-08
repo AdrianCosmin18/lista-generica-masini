@@ -1,12 +1,13 @@
 #include"iList.h"
 
 template<typename T>
-class Lista
+class Lista: public IList<T>
 {
 private:
 	Node<T>* head = NULL;
 
 public:
+	Node<T>* get_head() { return head; }
 
 	void add_start(T t) {
 
@@ -94,19 +95,6 @@ public:
 
 	}
 
-	//probleme
-	int indexOf(string fst, string sec) {
-
-		Node<T>* node = head;
-		int poz = -1;
-
-		while (node != NULL) {
-
-			poz++;
-			//if(node->get_data()->)
-		}
-	}
-
 	Node<T>* get_node_by_poz(int p) {
 
 		Node<T>* node = head;
@@ -149,6 +137,91 @@ public:
 		priv->set_next(node->get_next());
 	}
 
+	bool contains(T t) {
 
+		Node<T>* node = head;
+
+		while (node != NULL) {
+
+			if (node->get_data()->operator==(*t)) {
+
+				return true;
+			}
+			node = node->get_next();
+		}
+		return false;
+	}
+
+	bool isEmpty() {
+
+		if (get_last() == NULL) {
+
+			return true;
+		}
+		return false;
+	}
+
+	int size() {
+
+		if (!isEmpty()) {
+
+			int count = 0;
+			Node<T>* node = head;
+			while (node != NULL) {
+
+				count++;
+				node = node->get_next();
+			}
+			return count;
+		}
+		return 0;
+	}
+
+	T get_data_by_index(int index) {
+
+		Node<T>* node = get_node_by_poz(index);
+		if (node != NULL) {
+
+			return node->get_data();
+		}
+		return NULL;
+	}
+
+	void replace(T t, int index) {
+
+		Node<T>* node = get_node_by_poz(index);
+		node->set_data(t);
+	}
+
+	void swap(Node<T>* n1, Node<T>* n2) {
+
+		int index1 = indexOf(n1->get_data());
+		int index2 = indexOf(n2->get_data());
+
+		replace(n1->get_data(), index1);
+		replace(n2->get_data(), index2);
+	}
+
+	void sort() {
+
+		int flag = 0;
+
+		do {
+
+			flag = 0;
+
+			for (int i = 0; i < size() - 1; i++) {
+
+				if (get_data_by_index(i + 1)->operator< (*get_data_by_index(i))) {
+
+					T aux = get_data_by_index(i);
+					replace(get_data_by_index(i + 1), i);
+					replace(aux, i + 1);
+
+					flag = 1;
+				}
+			}
+		} while (flag == 1);
+	}
 };
 
