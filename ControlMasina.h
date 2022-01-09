@@ -116,5 +116,17 @@ public:
 		}
 
 	}
+
+	bool exista_masina(string marca, string model) {
+
+		for (int i = 0; i < list->size(); i++) {
+
+			if (list->get_data_by_index(i)->get_marca() == marca && list->get_data_by_index(i)->get_model() == model) {
+
+				return 1;
+			}
+		}
+		return 0;
+	}
 };
 

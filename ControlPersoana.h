@@ -83,7 +83,14 @@ public:
 
 		if (index != -1) {
 
-			list->remove(index);
+			if (index == 0) {
+
+				list->remove_first();
+			}
+			else {
+
+				list->remove(index);
+			}
 		}
 	}
 	
@@ -99,6 +106,18 @@ public:
 
 			node->get_data()->set_h(h);
 		}
+	}
+
+	bool exists_person(string nume) {
+
+		for (int i = 0; i < list->size(); i++) {
+
+			if (list->get_data_by_index(i)->get_nume() == nume) {
+
+				return 1;
+			}
+		}
+		return 0;
 	}
 };
 

@@ -1,12 +1,12 @@
-#include"ControlPersoana.h"
+#include"ControlRent_Car.h"
 
 int main(){
 
 
-	ControlPersoana* cp = new ControlPersoana();
+	ControlRent_Car* crc = new ControlRent_Car();
 
-	cp->add_persoana(new Persoana("Anne,F,1.7"));
-	cp->modify("Anne", "F", 1.61);
-	cp->traverse();
+	crc->add(new Rent_Car(crc->get_next_available_id(), "Nedelcu Adrian", "Mercedes", "Benz"));
+	crc->traverse();
+
 }
 

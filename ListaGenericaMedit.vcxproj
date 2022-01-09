@@ -141,25 +141,30 @@
   <ItemGroup>
     <ClCompile Include="ControlMasina.cpp" />
     <ClCompile Include="ControlPersoana.cpp" />
+    <ClCompile Include="ControlRent_Car.cpp" />
     <ClCompile Include="iList.cpp" />
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="ListaGenericaMedit.cpp" />
     <ClCompile Include="Masina.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Persoana.cpp" />
+    <ClCompile Include="Rent_Car.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ControlMasina.h" />
     <ClInclude Include="ControlPersoana.h" />
+    <ClInclude Include="ControlRent_Car.h" />
     <ClInclude Include="iList.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="Masina.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Persoana.h" />
+    <ClInclude Include="Rent_Car.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="masini.txt" />
     <Text Include="persoane.txt" />
+    <Text Include="rent_cars.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
