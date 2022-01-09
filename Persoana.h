@@ -16,7 +16,7 @@ public:
 
 	void set_nume(string n) { nume = n; }
 	void set_gen(string g) { gen = g; }
-	void set_h(int h) { this->h = h; }
+	void set_h(double h) { this->h = h; }
 
 
 	Persoana() :nume{ "anonim" }, gen{ "M" }, h{ 1.8 }{}

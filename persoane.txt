@@ -1,0 +1,5 @@
+Nedelcu Adrian,M,1.78
+Nacu Andrei,M,1.82
+Mihai Laurentiu,M,1.83
+Stoica Vasilica,F,1.69
+Andreea Maria,F,1.65

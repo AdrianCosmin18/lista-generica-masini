@@ -36,6 +36,9 @@
     <ClCompile Include="ControlMasina.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ControlPersoana.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Masina.h">
@@ -56,10 +59,16 @@
     <ClInclude Include="ControlMasina.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ControlPersoana.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="masini.txt">
       <Filter>Header Files</Filter>
+    </Text>
+    <Text Include="persoane.txt">
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
 </Project>

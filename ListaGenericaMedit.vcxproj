@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ControlMasina.cpp" />
+    <ClCompile Include="ControlPersoana.cpp" />
     <ClCompile Include="iList.cpp" />
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="ListaGenericaMedit.cpp" />
@@ -149,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ControlMasina.h" />
+    <ClInclude Include="ControlPersoana.h" />
     <ClInclude Include="iList.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="Masina.h" />
@@ -157,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="masini.txt" />
+    <Text Include="persoane.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
