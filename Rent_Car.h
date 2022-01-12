@@ -63,6 +63,10 @@ public:
 		return this->get_marca_masina() == rc.get_marca_masina() && this->get_model_masina() == rc.get_model_masina(); 
 	}
 
+	string describe_to_file() {
 
+		string text = to_string(id) + "," + nume_persoana + "," + marca_masina + "," + model_masina;
+		return text;
+	}
 };
 

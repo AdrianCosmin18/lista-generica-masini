@@ -80,6 +80,10 @@ public:
 		return os;
 	}
 
+	string describe_to_file() {
 
+		string text = marca + "," + model + "," + to_string(an);
+		return text;
+	}
 };
 

@@ -1,12 +1,16 @@
-#include"ControlRent_Car.h"
+#include"View.h"
 
 int main(){
 
 
-	ControlRent_Car* crc = new ControlRent_Car();
-
-	crc->add(new Rent_Car(crc->get_next_available_id(), "Nedelcu Adrian", "Mercedes", "Benz"));
-	crc->traverse();
+	View* view = new View();
+	view->play();
 
 }
 
+//Skoda, Octavia 4, 2022
+//Renault, Megane, 2019
+//Dacia, Duster, 2021
+//Mercedes, Benz, 2009
+//Ford, Puma, 2020
+//Renault, Fluence, 2014

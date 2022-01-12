@@ -30,6 +30,26 @@ public:
 		}
 	}
 
+	void save_to_file() {
+
+		ofstream g("masini.txt");
+		Node<Masina*>* last = list->get_last();
+
+		for (int i = 0; i < list->size(); i++) {
+
+			if (list->get_node_by_poz(i) != last) {
+
+				g << list->get_node_by_poz(i)->get_data()->describe_to_file() << "\n";
+			}
+			else {
+
+				g << list->get_node_by_poz(i)->get_data()->describe_to_file();
+			}
+		}
+
+		g.close();
+	}
+
 	void traverse() {
 
 		Node<Masina*>* node = list->get_head();

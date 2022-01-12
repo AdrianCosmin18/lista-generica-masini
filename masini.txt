@@ -4,3 +4,4 @@ Dacia,Duster,2021
 Mercedes,Benz,2009
 Ford,Puma,2020
 Renault,Fluence,2014
+Dacia,Logan,2021

@@ -67,5 +67,10 @@ public:
 		return os;
 	}
 
+	string describe_to_file() {
+
+		string text = nume + "," + gen + "," + to_string(h);
+		return text;
+	}
 };
 
