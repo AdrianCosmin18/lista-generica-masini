@@ -128,11 +128,11 @@ public:
 		}
 	}
 
-	bool exists_person(string nume) {
+	bool exists_person(string nume, string gen) {
 
 		for (int i = 0; i < list->size(); i++) {
 
-			if (list->get_data_by_index(i)->get_nume() == nume) {
+			if (list->get_data_by_index(i)->get_nume() == nume && list->get_data_by_index(i)->get_gen() == gen) {
 
 				return 1;
 			}

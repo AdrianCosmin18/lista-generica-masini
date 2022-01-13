@@ -105,5 +105,34 @@ public:
 			list->get_data_by_index(index)->set_nume_persoana(nume);
 		}
 	}
+
+	Node<Rent_Car*>* get_node_by_id(int id) {
+
+		Node<Rent_Car*>* node = list->get_head();
+		while (node != NULL) {
+
+			if (node->get_data()->get_id() == id) {
+
+				return node;
+			}
+
+			node = node->get_next();
+		}
+
+		return NULL;
+	}
+
+	bool exist(int id) {
+
+		for (int i = 0; i < list->size(); i++) {
+
+			if (list->get_data_by_index(i)->get_id() == id) {
+
+				return true;
+			}
+		}
+
+		return false;
+	}
 };
 

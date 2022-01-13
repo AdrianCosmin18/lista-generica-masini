@@ -1,5 +1,5 @@
 1,Nedelcu Adrian,Skoda,Ocatvia 4
-2,Nacu Andrei,Renault,Megane
+2,Andreea Maria,Ford,Puma
 3,Mihai Laurentiu,Dacia,Duster
 4,Stoica Vasilica,Mercedes,Benz
 5,Andreea Maria,Ford,Puma
@@ -7,6 +7,6 @@
 7,Mihai Laurentiu,Skoda,Octavia 4
 8,Andreea Maria,Mercedes,Benz
 9,Nedelcu Adrian,Ford,Puma
-10,Stoica Vasilica,Dacia,Duster
 11,Nedelcu Adrian,Renault,Megane
 12,Stoica Vasilica,Skoda,Octavia 4
+13,Nedelcu Adrian,Skoda,Octavia 4
